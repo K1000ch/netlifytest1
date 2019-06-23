@@ -1,54 +1,22 @@
 import React from 'react'
-import Helmet from 'react-helmet'
-import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
-import './all.sass'
-import useSiteMetadata from './SiteMetadata'
+import { Link } from 'gatsby'
+import Header from "./header"
+import Footer from "./footer"
 
-const TemplateWrapper = ({ children }) => {
-  const { title, description } = useSiteMetadata()
-  return (
-    <div>
-      <Helmet>
-        <html lang="en" />
-        <title>{title}</title>
-        <meta name="description" content={description} />
+import "../css/reset.css"
+import "../css/globalSetting.css"
+import "../css/globalStyle.css"
 
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/img/apple-touch-icon.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          href="/img/favicon-32x32.png"
-          sizes="32x32"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          href="/img/favicon-16x16.png"
-          sizes="16x16"
-        />
+import layoutStyles from "../css/components/layout.module.css"
 
-        <link
-          rel="mask-icon"
-          href="/img/safari-pinned-tab.svg"
-          color="#ff4400"
-        />
-        <meta name="theme-color" content="#fff" />
 
-        <meta property="og:type" content="business.business" />
-        <meta property="og:title" content={title} />
-        <meta property="og:url" content="/" />
-        <meta property="og:image" content="/img/og-image.jpg" />
-      </Helmet>
-      <Navbar />
-      <div>{children}</div>
+
+export default ({ children }) => (
+  <div className={layoutStyles.wrapper}>
+      <Header className={layoutStyles.header}/>
+        <div className={layoutStyles.main}>
+          { children }
+        </div>
       <Footer />
-    </div>
-  )
-}
-
-export default TemplateWrapper
+  </div>
+)

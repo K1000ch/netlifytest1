@@ -1,0 +1,25 @@
+.wrapper{
+    background-image: url("https://ichef.bbci.co.uk/images/ic/960x540/p01bqj4q.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+}
+
+.main{
+    min-height: 100vh;
+}
+
+.wrapper header{
+    background-color:rgba(0, 0, 0, 0.5);
+    width: 100vw;
+}
+.wrapper footer{
+    background-color:rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    width: 100vw;
+}
+
+.wrapper header ul{ 
+
+}

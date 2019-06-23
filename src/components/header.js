@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import GloalNav from "./globalNavigation"
 
 import logo from '../img/logo.svg'
 import facebook from '../img/social/facebook.svg'
@@ -7,14 +8,17 @@ import instagram from '../img/social/instagram.svg'
 import twitter from '../img/social/twitter.svg'
 import vimeo from '../img/social/vimeo.svg'
 
-const footer = class extends React.Component {
+const header = class extends React.Component {
   render() {
     return (
-        <footer>
-            ふったーです
-        </footer>
+        <header>
+          <h1>
+            Joy Division
+          </h1>
+          <GloalNav />
+        </header>
     )
   }
 }
 
-export default footer
+export default header
