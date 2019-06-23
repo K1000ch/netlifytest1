@@ -27,6 +27,8 @@ collections:
         label: "About"
         name: "about"
         fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
+          - {label: "Title", name: "title", widget: "hidden", default: "about"}
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about"}
           - {label: "Body", name: "body", widget: "markdown"}
 
