@@ -1,10 +1,14 @@
 import React from "react"
-import Layout from "../components/layout"
+//import Layout from "../components/layout"
 
 export default () => (
-  <Layout>
-      <h1>
-          Live
-      </h1>
-  </Layout>
+  <div>
+    <h1>
+      live
+    </h1>
+    <p>
+      What do I like to do? Lots of course but definitely enjoy building
+      websites.
+    </p>
+  </div>
 )
