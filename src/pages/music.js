@@ -1,14 +1,16 @@
 import React from "react"
-//import Layout from "../components/layout"
+import Layout from "../components/layout"
+import { Link } from 'gatsby'
 
 export default () => (
-  <div>
-    <h1>
-      music
-    </h1>
-    <p>
-      What do I like to do? Lots of course but definitely enjoy building
-      websites.
-    </p>
-  </div>
+  <Layout>
+    <div>
+      <h1>
+        Music
+      </h1>
+      <p>
+
+      </p>
+    </div>
+  </Layout>
 )

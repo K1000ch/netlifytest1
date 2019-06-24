@@ -13,7 +13,7 @@ const header = class extends React.Component {
     return (
         <header>
           <h1>
-            Joy Division
+            Some Band
           </h1>
           <GloalNav />
         </header>
