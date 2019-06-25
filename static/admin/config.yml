@@ -5,12 +5,20 @@ backend:
 media_folder: static/img
 public_folder: /img
 
+slug:
+  encoding: "ascii"
+
 collections:
   - name: "news"
     label: "News"
     folder: "src/markdowns/news"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}"
+
+    collection: "lives"
+    searchFields: "lives.title"
+    valueField: "lives.title"
+
+    slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}-{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "news-post"}
       - {label: "Title", name: "title", widget: "string"}
@@ -23,7 +31,7 @@ collections:
     label: "Lives"
     folder: "src/markdowns/lives"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}-{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "live-post"}
       - {label: "Title", name: "title", widget: "string"}
