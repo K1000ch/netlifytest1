@@ -5,6 +5,8 @@ backend:
 media_folder: static/img
 public_folder: /img
 
+publish_mode: editorial_workflow
+
 collections:
   - name: "news"
     label: "News"
@@ -26,19 +28,26 @@ collections:
       - file: "src/markdowns/about.md"
         label: "About"
         name: "about"
+        delete: false
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "hidden", default: "about"}
           - {label: "Body", name: "body", widget: "markdown"}
 
-  - name: "lives"
-    label: "Lives"
-    folder: "src/markdowns/lives"
+  - name: "musics"
+    label: "Musics"
+    folder: "src/markdowns/musics"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}"
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "live-post"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "music-post"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Body", name: "body", widget: "markdown", required: false }
       - {label: "Featured Image", name: "featuredimage", widget: image, required: false}
+      - {label: "Songs", name: "songs", widget: "list", required: false,
+        fields:
+          -{label: "Song Name", name: "songName", widget: "string"}
+          -{label: "Song Number", name: "songNumber", widget: "number", valueType: "int",min: 0, max: 30}
+      }
+
