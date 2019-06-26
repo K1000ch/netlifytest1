@@ -5,16 +5,12 @@ import { graphql } from "gatsby"
 
 
 export default ({data}) => (
-//  console.log(data)
-
   <Layout>
     <div>
       <h1>
         About
       </h1>
-      <p>
-        {data.allMarkdownRemark.edges[0].node.excerpt}
-      </p>
+      <div dangerouslySetInnerHTML={{ __html: data.allMarkdownRemark.edges[0].node.html }} />
     </div>
   </Layout>
 
