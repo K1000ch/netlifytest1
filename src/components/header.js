@@ -1,8 +1,9 @@
 import React from 'react'
-import { Link } from 'gatsby'
+//import { Link } from 'gatsby'
 import GloalNav from "./globalNavigation"
-import { StaticQuery, graphql } from "gatsby"
+// import { StaticQuery, graphql } from "gatsby"
 import { useSiteMetadata } from "../hooks/site-meta-data"
+import headerStyles from "../css/components/header.module.css"
 
 
 import logo from '../img/logo.svg'

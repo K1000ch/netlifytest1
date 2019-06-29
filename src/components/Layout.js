@@ -6,7 +6,6 @@ import Footer from "./footer"
 import "../css/reset.css"
 import "../css/globalSetting.css"
 import "../css/globalStyle.css"
-
 import layoutStyles from "../css/components/layout.module.css"
 
 
