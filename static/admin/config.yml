@@ -43,7 +43,7 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-      - file: "src/markdowns/about.md"
+      - file: "src/pages/markdowns/about.md"
         label: "About"
         name: "about"
         delete: false
