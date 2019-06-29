@@ -21,8 +21,8 @@ export const query = graphql`
   allMarkdownRemark(
       filter: {
         frontmatter: {
-          templateKey: {
-            eq: "about-page"
+          title: {
+            eq: "about"
           }
         }
       }
