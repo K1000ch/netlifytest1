@@ -3,8 +3,8 @@ var proxy = require('http-proxy-middleware')
 module.exports = {
   siteMetadata: {
     title: 'Room Number 404',
-    description:
-      'This is sample site',
+    description: 'This is sample site',
+    charset: "utf-8",
   },
   plugins: [
     'gatsby-plugin-react-helmet',
