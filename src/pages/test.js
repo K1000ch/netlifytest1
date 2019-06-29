@@ -1,29 +1,25 @@
 import React from 'react'
+import ReactDOM from 'react-dom'
 import { graphql } from 'gatsby'
 import Layout from "../components/layout.js"
+import ReactRevealText from "react-reveal-text"
 
+class Square extends React.Component {
 
-let qwer = () =>{
-    alert("qwer");
+  constructor(){
+    super();
+    this.state = {
+      metadata : null
+    };
+  }
+  
+  render() {
+    return (
+      <Layout>
+        abababababa
+      </Layout>
+    );
+  }
 }
 
-export default ({data}) => (
-  <Layout>
-    <h1>{data.site.siteMetadata.title}</h1>
-    <div
-        onClick={() => qwer()}
-    >
-        e
-    </div>
-  </Layout>
-)
-
-export const query = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`
+export default Square

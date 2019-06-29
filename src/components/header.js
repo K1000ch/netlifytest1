@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import GloalNav from "./globalNavigation"
 import { StaticQuery, graphql } from "gatsby"
+import { useSiteMetadata } from "../hooks/site-meta-data"
 
 
 import logo from '../img/logo.svg'
@@ -10,23 +11,40 @@ import instagram from '../img/social/instagram.svg'
 import twitter from '../img/social/twitter.svg'
 import vimeo from '../img/social/vimeo.svg'
 
-/*
-const header = class extends React.Component ()
-  render() {
-    return (
-        <header>
-          <h1>
-            Some Band
-          </h1>
-          <GloalNav />
-        </header>
-    )
-  }
+
+function header(){
+  const metadata = useSiteMetadata()
+  return (
+    <header>
+      <h1>
+        {metadata.title}
+      </h1>
+      <GloalNav />
+    </header>
+  )
 }
 
-export default header
+export default header;
+
+
+
+/*
+
+export default () => {
+  const metadata = useSiteMetadata()
+  return (
+    <header>
+      <h1>
+        {metadata.title}
+      </h1>
+      <GloalNav />
+    </header>
+  )
+}
 */
 
+
+/*
 
 
 export default () => (
@@ -55,3 +73,4 @@ export default () => (
 
   />
 )
+*/
