@@ -65,7 +65,6 @@ collections:
       - {label: "Body", name: "body", widget: "markdown", required: false }
       - {label: "Featured Image", name: "featuredimage", widget: image, required: false}
 
-
   - name: "lyrics"
     label: "Lyrics"
     folder: "src/markdowns/lyrics"
@@ -78,3 +77,14 @@ collections:
       - {label: "Body", name: "body", widget: "markdown", required: false }
       - {label: "Featured Image", name: "featuredimage", widget: image, required: false}
 
+  - name: "movies"
+    label: "Movies"
+    folder: "src/markdowns/movies"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "movie-post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Link", name: "link", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Body", name: "body", widget: "markdown", required: false }
