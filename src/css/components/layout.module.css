@@ -1,24 +1,19 @@
 .wrapper{
     background-image: url("../../img/testimage1.png");
     background-position: center;
-    background-size: cover;
+    background-size: 170% 170%;
     height: 100%;
     position: relative;
 }
 
+
+.pad{
+    height: 50px;
+}
 .main{
     min-height: 100vh;
 }
 
-.wrapper header{
-    background-color:rgba(0, 0, 0, 0.5);
-    width: 100vw;
-}
-.wrapper footer{
-    background-color:rgba(0, 0, 0, 0.5);
-    bottom: 0;
-    width: 100vw;
-}
 
 .wrapper header ul{ 
 

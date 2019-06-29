@@ -16,11 +16,11 @@ import vimeo from '../img/social/vimeo.svg'
 function header(){
   const metadata = useSiteMetadata()
   return (
-    <header>
+    <header className={headerStyles.header}>
       <h1>
         {metadata.title}
       </h1>
-      <GloalNav />
+      <GloalNav className={headerStyles.nav}/>
     </header>
   )
 }
