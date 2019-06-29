@@ -18,7 +18,15 @@ export default ({data}) => (
 
 export const query = graphql`
 {
-  allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "about-page"}}}) {
+  allMarkdownRemark(
+      filter: {
+        frontmatter: {
+          templateKey: {
+            eq: "about-page"
+          }
+        }
+      }
+    ) {
     edges {
       node {
         html

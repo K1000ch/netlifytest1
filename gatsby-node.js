@@ -22,7 +22,8 @@ exports.createPages = ({ graphql, actions }) => {
   // see: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise for more info
   return graphql(`
     {
-      allMarkdownRemark {
+      allMarkdownRemark(filter: {frontmatter: {templateKey: {ne: "page"}}}) 
+      {
         edges {
           node {
             fields {
