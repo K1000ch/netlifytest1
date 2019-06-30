@@ -8,9 +8,16 @@ export default () => (
       <h1>
         Contact
       </h1>
-      <p>
-
-      </p>
+      <iframe　
+        src="https://docs.google.com/forms/d/e/1FAIpQLSex8WPEr4CAdxSEGjlw_GKSUeCgA3DK-ohtWHKSockVNxcosA/viewform?embedded=true"
+        width="640"
+        height="760"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+      >
+        読み込んでいます...
+      </iframe>
     </div>
   </Layout>
 )

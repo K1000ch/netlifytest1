@@ -10,7 +10,7 @@ import layoutStyles from "../css/components/layout.module.css"
 
 
 
-export default ({ children }) => (
+export default ({ children ,current }) => (
   <div className={layoutStyles.wrapper}>
       <Header className={layoutStyles.header}/>
         <div className={layoutStyles.pad}></div>
@@ -18,6 +18,9 @@ export default ({ children }) => (
         <div className={layoutStyles.main}>
           { children }
         </div>
+        <h1>
+        {current}
+        </h1>
         
       <Footer />
   </div>

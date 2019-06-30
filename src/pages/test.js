@@ -12,8 +12,9 @@ class Square extends React.Component {
       metadata : null
     };
   }
-  
-  render() {
+
+
+  render(props) {
     return (
       <Layout>
         abababababa
@@ -23,3 +24,4 @@ class Square extends React.Component {
 }
 
 export default Square
+
