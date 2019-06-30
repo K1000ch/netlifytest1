@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 export default () => (
-  <nav>
+  <nav className="globalNavigation">
     <ul>
       <li className="index">
         <Link to="/">

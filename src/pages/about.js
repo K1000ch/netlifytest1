@@ -3,9 +3,12 @@ import Layout from "../components/layout"
 import { Link } from 'gatsby'
 import { graphql } from "gatsby"
 
+import aboutStyle from "../css/pages/about.module.css"
+import "../css/pages/about.css"
+
 
 export default ({data}) => (
-  <Layout>
+  <Layout className={aboutStyle}>
     <div>
       <h1>
 H1About
