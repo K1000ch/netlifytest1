@@ -1,7 +1,6 @@
 import React from "react"
 import Layout from "../components/layout.js"
-import { Link } from 'gatsby'
-
+import RevealText from "../components/revealText"
 /*
 export default () => (
   <Layout>
@@ -18,11 +17,14 @@ export default () => (
 */
 
 class Index extends React.Component{
-/*
+
   constructor() {
     super();
+    this.state = {
+      text : "Room Number 404"
+    }
   }
-*/
+
 
   render() {
     return(
@@ -33,6 +35,7 @@ class Index extends React.Component{
           What do I like to do? Lots of course but definitely enjoy building
           websites.
         </p>
+        <RevealText text="Room Number 404"/>
       </div>
       </Layout>
     )
