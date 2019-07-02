@@ -1,8 +1,37 @@
-import React from "react"
-import { useSiteMetadata } from "../hooks/site-meta-data"
-
+import React, { Component } from "react"
 import Layout from "../components/layout.js"
 import ReactRevealText from "react-reveal-text"
+import hoverEffect from 'hover-effect'
+
+class Hover extends React.Component{
+
+componentDidMount() {  
+  var myAnimation = new hoverEffect({
+    parent: document.querySelector('.my-div'),
+    intensity: 0.3,
+    image1: "../img/etienne-girardet-Xh6BpT-1tXo-unsplash",
+    image2: '../img/joel-filipe-R4BSGm0J7yQ-unsplash',
+    displacementImage: '../img/13.jpg'
+  });
+}
+
+
+  render(){
+    return(
+      <Layout>
+      <h1>
+        hover
+      </h1>
+      <div className="my-div">
+
+      </div>
+    </Layout>
+    )
+  }
+}
+
+export default Hover
+/*
 
 class Rev extends React.Component{
 
@@ -44,3 +73,4 @@ class Rev extends React.Component{
 }
 
 export default Rev
+*/

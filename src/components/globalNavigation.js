@@ -31,7 +31,7 @@ export default () => (
       </li>
       <li className="movie">
         <Link to="/movie">
-          About
+          Movie
         </Link>
       </li>
       <li className="lyric">
