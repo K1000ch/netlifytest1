@@ -29,6 +29,11 @@ export default () => (
           Live
         </Link>
       </li>
+      <li className="movie">
+        <Link to="/movie">
+          About
+        </Link>
+      </li>
       <li className="lyric">
         <Link to="/lyric">
           Lyric
