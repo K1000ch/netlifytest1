@@ -5,7 +5,9 @@ export default () => {
   const data = useStaticQuery(
     graphql`
     {
-      allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "movie-post"}}}) {
+      allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "movie-post"}}}
+      sort: {order: ASC, fields: frontmatter___date}
+      ) {
         edges {
           node {
             frontmatter {

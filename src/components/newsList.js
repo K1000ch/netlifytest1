@@ -5,7 +5,10 @@ export default () => {
   const data = useStaticQuery(
     graphql`
       query {
-        allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "news-post"}}}) {
+        allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "news-post"}}}, 
+          sort: {order: ASC, fields: frontmatter___date}, limit: 20
+          ) 
+          {
           edges {
             node {
               html
