@@ -8,7 +8,7 @@ import "../css/pages/about.css"
 
 
 export default ({data}) => (
-  <Layout className={aboutStyle}>
+  <Layout　currentPage="about" className={aboutStyle}>
     <div>
       <h1>
 H1About

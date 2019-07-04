@@ -10,16 +10,16 @@ import layoutStyles from "../css/components/layout.module.css"
 
 
 
-export default ({ children ,current }) => (
+export default ({ children ,currentPage }) => (
   <div className={layoutStyles.wrapper}>
-      <Header className={layoutStyles.header}/>
+      <Header currentPage={currentPage} className={layoutStyles.header}/>
         <div className={layoutStyles.pad}></div>
 
         <div className={layoutStyles.main}>
           { children }
         </div>
         <h1>
-        {current}
+        {currentPage}
         </h1>
         
       <Footer />
