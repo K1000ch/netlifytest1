@@ -28,7 +28,7 @@ class Index extends React.Component{
 
   render() {
     return(
-      <Layout current={"/"}>
+      <Layout currentPage="index">
       <div>
         <h1>Index</h1>
         <p>
