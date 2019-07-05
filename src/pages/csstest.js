@@ -1,7 +1,5 @@
 import React, { Component } from "react"
 import Layout from "../components/layout.js"
-import ReactRevealText from "react-reveal-text"
-import hoverEffect from 'hover-effect'
 
 class Hover extends React.Component{
 
