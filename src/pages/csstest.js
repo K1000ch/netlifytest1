@@ -1,17 +1,9 @@
 import React, { Component } from "react"
 import Layout from "../components/layout.js"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
+// import TransitionLink from "gatsby-plugin-transition-link"
 
 class Hover extends React.Component{
-
-componentDidMount() {  
-  var myAnimation = new hoverEffect({
-    parent: document.querySelector('.my-div'),
-    intensity: 0.3,
-    image1: "../img/etienne-girardet-Xh6BpT-1tXo-unsplash",
-    image2: '../img/joel-filipe-R4BSGm0J7yQ-unsplash',
-    displacementImage: '../img/13.jpg'
-  });
-}
 
 
   render(){
@@ -20,9 +12,10 @@ componentDidMount() {
       <h1>
         hover
       </h1>
-      <div className="my-div">
+<AniLink fade to="/" duration={3}>
+  Go to Page 4
+</AniLink>
 
-      </div>
     </Layout>
     )
   }

@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 import NewsList from "../components/newsList"
 
 export default () => (
-  <Layout>
+  <Layout currentPage="news">
     <h1>
       News
     </h1>

@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import AniLink from "gatsby-plugin-transition-link/AniLink"
+
 
 class GlobalNavigation extends React.Component{
   constructor(props){
@@ -25,7 +27,8 @@ class GlobalNavigation extends React.Component{
         "movie",
         "lyric",
         "contact"
-      ]
+      ],
+      transitionDuration: 3
     }
   }
 
@@ -35,9 +38,16 @@ class GlobalNavigation extends React.Component{
       <ul>
         {this.state.links.map((value) =>
           <li className={value === this.state.currentPage ? value + " activePage" : value}>
+            
             <Link to={value === "index" ? "/" : value}>
               {this.state.linksUpper[value]}
             </Link>
+            
+            {/*
+            <AniLink fade duration={3} to={value === "index" ? "/" : value}>
+              {this.state.linksUpper[value]}
+            </AniLink>
+            */}
           </li>
         )}
       </ul>

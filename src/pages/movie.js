@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import MovieList from "../components/movieList"
 
 export default () => (
-  <Layout>
+  <Layout currentPage="movie">
       <h1>
         Lives
       </h1>

@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import { Link } from 'gatsby'
 
 export default () => (
-  <Layout>
+  <Layout currentPage="contact">
     <div>
       <h1>
         Contact

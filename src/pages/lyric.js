@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import { Link } from 'gatsby'
 
 export default () => (
-  <Layout>
+  <Layout currentPage="lyric">
     <div>
       <h1>
         Lyrics

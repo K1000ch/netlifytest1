@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 import LiveList from "../components/liveList"
 
 export default () => (
-  <Layout>
+  <Layout currentPage="live">
       <h1>
         Lives
       </h1>
