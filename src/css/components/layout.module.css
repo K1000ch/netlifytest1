@@ -1,14 +1,11 @@
 .wrapper{
-    background-image: url("../../img/omair-khan-3mxlzYmb7oM-unsplash.jpg");
-    background-position: center;
-    background-size: 170% 170%;
     height: 100%;
     position: relative;
 }
 
 
 .pad{
-    height: 50px;
+    height: 100px;
 }
 .main{
     min-height: 100vh;

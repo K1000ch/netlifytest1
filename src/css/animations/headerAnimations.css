@@ -1,0 +1,4 @@
+.headerWraper #hide h1,.headerWraper #hide nav{
+  position: relative;
+  top: -1vh; 
+}

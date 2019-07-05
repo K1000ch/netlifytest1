@@ -3,6 +3,7 @@ import React from 'react'
 import GloalNav from "./globalNavigation"
 import { throttle, debounce } from 'throttle-debounce';
 import headerStyles from "../css/components/header.module.css"
+import "../css/animations/headerAnimations.css"
 
 // import logo from '../img/logo.svg'
 // import facebook from '../img/social/facebook.svg'
@@ -50,12 +51,14 @@ class Header extends React.Component{
 
   render(){
     return(
-      <header className={headerStyles.header} onScroll={this.handleScroll}>
-          <h1 id="header">
-            {this.state.title}{this.state.currentPosition}
-          </h1>
+      <div class="headerWraper">
+      <header id={this.state.headerClass}  className={headerStyles.header} onScroll={this.handleScroll}>
+        <h1 className={headerStyles.title} id="header">
+          {this.state.title}{this.state.currentPosition}
+        </h1>
         <GloalNav currentPage={this.state.currentPage} className={headerStyles.nav}/>
       </header>
+      </div>
     )
   }
 }
