@@ -1,5 +1,5 @@
 import React from "react"
-import { useSiteMetadata } from "../hooks/site-meta-data"
+// import { useSiteMetadata } from "../hooks/site-meta-data"
 
 import Layout from "../components/layout.js"
 import ReactRevealText from "react-reveal-text"

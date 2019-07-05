@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import { Link } from 'gatsby'
+// import { Link } from 'gatsby'
 import NewsList from "../components/newsList"
 
 export default () => (
