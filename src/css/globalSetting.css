@@ -1,3 +1,20 @@
+@font-face{
+  font-family: futuraExtended;
+  src: url("../fonts/FuturaExtended.ttf") format("opentype");
+}
+@font-face{
+  font-family: gidoleRegular;
+  src: url("../fonts/GidoleFont/Gidole-Regular.ttf") format("truetype");
+}
+@font-face{
+  font-family: morganiteMedium;
+  src: url("../fonts/Morganite/Morganite-Medium.ttf") format("truetype");
+}
+@font-face{
+  font-family: morganiteBlack;
+  src: url("../fonts/Morganite/Morganite-Black.ttf") format("truetype");
+}
+
 .youtube-wrap {
   position: relative;
   /*padding-bottom: 56.25%;*/ /*アスペクト比 16:9の場合の縦幅*/
