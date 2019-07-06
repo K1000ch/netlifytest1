@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 // import { Link } from 'gatsby'
 import { graphql } from "gatsby"
 
-import aboutStyle from "../css/pages/about.module.css"
+import aboutStyle from "../css/pages/about.css"
 import "../css/pages/about.css"
 
 
