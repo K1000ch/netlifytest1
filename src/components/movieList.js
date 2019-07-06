@@ -32,7 +32,8 @@ export default () => {
               </h3>
             </div>
             <div className="youtube-wrap">
-              <iframe 
+              <iframe
+                title={node.frontmatter.title}
                 src={node.frontmatter.link}
                 frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"

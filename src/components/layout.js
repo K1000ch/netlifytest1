@@ -5,21 +5,18 @@ import Footer from "./footer"
 //import "../css/reset.css"
 //import "../css/globalSetting.css"
 //import "../css/globalStyle.css"
-import layoutStyles from "../css/components/layout.module.css"
+import "../css/components/layout.css"
 
 
 export default ({ children ,currentPage }) => (
-  <div className={layoutStyles.wrapper}>
-      <Header currentPage={currentPage} className={layoutStyles.header}/>
-        <div className={layoutStyles.pad}></div>
+  <div className="layoutWrapper">
+      <Header currentPage={currentPage} className="layoutHeader"/>
+        <div className="layoutPad"></div>
 
-        <div className={layoutStyles.main}>
+        <div className="layoutMain">
           { children }
         </div>
-        <h1>
-        {currentPage}
-        </h1>
-        
-      <Footer />
+
+      <Footer className="LayoutHeader"/>
   </div>
 )
