@@ -22,7 +22,7 @@ export default () => {
     `
   )
   return (
-    <ul>
+    <ul className="movieList">
       {data.allMarkdownRemark.edges.map(
         ({ node }, index) => (
           <li key={index}>
@@ -31,14 +31,20 @@ export default () => {
                 {node.frontmatter.title}
               </h3>
             </div>
-            <div className="youtube-wrap">
-              <iframe
-                title={node.frontmatter.title}
-                src={node.frontmatter.link}
-                frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-              </iframe>
+            <div className="movieWraper">
+              <div className="iframeWrap">
+
+                  <iframe
+                    title={node.frontmatter.title}
+                    src={node.frontmatter.link}
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullscreen
+                    width="100%"
+                    height="100%"
+                  >
+                  </iframe>
+                </div>
             </div>
           </li>
       ))} 
