@@ -30,3 +30,9 @@
   display: flex;
   justify-content: space-around;
 }
+
+
+.globalHeader #hide h1,.globalHeader #hide nav{
+  position: relative;
+  top: -1vh;
+}

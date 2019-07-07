@@ -2,8 +2,8 @@ import React from 'react'
 // import { Link } from 'gatsby'
 import GloalNav from "./globalNavigation"
 import { throttle, debounce } from 'throttle-debounce';
-import "../css/components/header.css"
-import "../css/animations/headerAnimations.css"
+import "../css/components/header.scss"
+// import "../css/animations/headerAnimations.css"
 
 // import logo from '../img/logo.svg'
 // import facebook from '../img/social/facebook.svg'
@@ -25,7 +25,7 @@ class Header extends React.Component{
 
 
   componentDidMount() {
-    window.addEventListener('scroll', event => throttle(200,this.watchCurrentPosition()), true)
+    window.addEventListener('scroll', event => throttle(400,this.watchCurrentPosition()), true)
   }
 
   componentWillUnmount() {

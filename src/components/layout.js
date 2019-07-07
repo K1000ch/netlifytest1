@@ -5,7 +5,7 @@ import Footer from "./footer"
 //import "../css/reset.css"
 //import "../css/globalSetting.css"
 //import "../css/globalStyle.css"
-import "../css/components/layout.css"
+import "../css/components/layout.scss"
 
 
 export default ({ children ,currentPage }) => (
