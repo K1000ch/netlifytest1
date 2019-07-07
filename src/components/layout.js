@@ -17,6 +17,6 @@ export default ({ children ,currentPage }) => (
           { children }
         </div>
 
-      <Footer className="LayoutHeader"/>
+      <Footer className="layoutFooter"/>
   </div>
 )

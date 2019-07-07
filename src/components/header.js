@@ -57,7 +57,7 @@ class Header extends React.Component{
       >
         <div className="wrapper" id={this.state.headerClass}>
           <h1 className="siteTitle">
-            {this.state.title}{this.state.currentPosition}
+            {this.state.title}
           </h1>
           <GloalNav currentPage={this.state.currentPage} className="headerNav"/>
         </div>

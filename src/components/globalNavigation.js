@@ -42,12 +42,7 @@ class GlobalNavigation extends React.Component{
             <Link to={value === "index" ? "/" : value}>
               {this.state.linksUpper[value]}
             </Link>
-            
-            {/*
-            <AniLink fade duration={3} to={value === "index" ? "/" : value}>
-              {this.state.linksUpper[value]}
-            </AniLink>
-            */}
+    
           </li>
         )}
       </ul>

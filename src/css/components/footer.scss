@@ -1,0 +1,21 @@
+@import "../breakPoint";
+
+
+@media screen and (min-width:$breakPointMobile){
+  .footerModal{
+    // display: none;
+  }
+}
+
+@media screen and (max-width:$breakPointMobile){
+  .footerModal{
+    display: block;
+    .nav{
+      nav{
+        background-color: red;
+      }
+    }
+
+
+  }
+}

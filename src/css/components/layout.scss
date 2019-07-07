@@ -1,12 +1,17 @@
 @import "../breakPoint";
 
 .layoutWrapper{
-  height: 100%;
+  min-height: 100vh;
   position: relative;
 }
 
 .layoutPad{
   height: 12vh;
+}
+
+.LayoutFooter{
+  position: absolute;
+  bottom: 0;
 }
 
 @media screen and (min-width:$breakPointMobile){
