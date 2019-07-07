@@ -6,7 +6,7 @@ export default () => {
     graphql`
       query {
         allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "news-post"}}}, 
-          sort: {order: ASC, fields: frontmatter___date}, limit: 20
+          sort: {order: DESC, fields: frontmatter___date}, limit: 20
           ) 
           {
           edges {
