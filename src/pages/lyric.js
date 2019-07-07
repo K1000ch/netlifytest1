@@ -6,9 +6,9 @@ export default () => (
   <Layout currentPage="lyric">
     <div>
 <p>The base type is 1.6rem (16px) over 1.6 line height (24px)</p>
-<p> 10:1  warning  The href attribute is required for an anchor to be keyboard accessible. Provide a valid, navigable address as the href value. If you cannot
-provide an href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more:<br />
-https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md  jsx-a11y/anchor-is-valid
+<p> 1ef attribute is required for an anchor to be keyboard accessible. Provide a valid, navigable address as the href value. If you cannot
+provide an href, but still to resemble a link, use a button and change it with app<br />
+jsx-a11y/anchor-is-valid
 </p>
 <p>
 人間的理性はその認識の或る種類において特異な運命をもっている。それは、人間的理性

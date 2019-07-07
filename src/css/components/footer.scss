@@ -2,20 +2,119 @@
 
 
 @media screen and (min-width:$breakPointMobile){
-  .footerModal{
-    // display: none;
+  footer{
+    display: none;
   }
 }
 
 @media screen and (max-width:$breakPointMobile){
+  footer{
+    display: flex;
+    justify-content: center;
+    .button{
+      position: fixed;
+      bottom: 0;
+      margin-bottom: 10px;
+      font-size: 2.5rem;
+      z-index: 9999;
+    }
+
+  }
   .footerModal{
-    display: block;
-    .nav{
-      nav{
-        background-color: red;
+    opacity: 0;
+    background-color: rgba(000000, 000000, 000000, 0.5);
+    width: 100vh;
+    position: fixed;
+    z-index: 9997;
+    top: 0;
+    overflow: hidden;
+    color: white;
+
+    nav{
+      height: 100vh;
+      ul{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: space-between;
+        height: 80%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        li{
+          margin-top: 2vh;
+          padding-bottom: 2vh;
+          border-bottom: 2px solid white;
+          width: 30vw;
+          a{
+            width: 100%;
+            text-align: center;
+          }
+        }
+        li:last-child{
+          border-bottom: none;
+        }
       }
     }
 
+    a{
+      color: white!important;
+      z-index: 9998;
+      font-size: 2.5rem;
+    }
 
+    li{
+      display: flex;
+      justify-content: bottom;
+    }
+  }
+  
+  .notActive{
+    animation-name: hide;
+    animation-delay: 0s;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+  .active{
+    animation-name: show;
+    animation-delay: 0s;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes show{
+    0% {
+      display: none;
+      opacity: 0;
+    }
+
+    1% {
+      display: block;
+      opacity: 0;
+    }
+
+    100% {
+      display: block;
+      opacity: 1;
+    }
+  }
+  @keyframes hide{
+    0% {
+      display: block;
+      opacity: 1;
+    }
+
+    99% {
+      display: block;
+      opacity: 0;
+    }
+
+    100% {
+      display: none;
+      opacity: 0;
+    }
   }
 }
+

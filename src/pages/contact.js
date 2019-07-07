@@ -9,6 +9,7 @@ export default () => (
         Contact
       </h1>
       <iframe　
+        title="testform"
         src="https://docs.google.com/forms/d/e/1FAIpQLSex8WPEr4CAdxSEGjlw_GKSUeCgA3DK-ohtWHKSockVNxcosA/viewform?embedded=true"
         width="640"
         height="760"

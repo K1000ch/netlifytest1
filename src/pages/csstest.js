@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React from "react"
 import Layout from "../components/layout.js"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 // import TransitionLink from "gatsby-plugin-transition-link"

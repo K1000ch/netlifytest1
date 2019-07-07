@@ -15,7 +15,6 @@ class GlobalNavigation extends React.Component{
         news: "News",
         live: "Live",
         movie: "Movie",
-        lyric: "Lyric",
         contact: "Contact"
       },
       links:[
@@ -25,7 +24,6 @@ class GlobalNavigation extends React.Component{
         "news",
         "live",
         "movie",
-        "lyric",
         "contact"
       ],
       transitionDuration: 3
@@ -37,9 +35,12 @@ class GlobalNavigation extends React.Component{
     <nav className="globalNavigation">
       <ul>
         {this.state.links.map((value) =>
-          <li className={value === this.state.currentPage ? value + " activePage" : value}>
+          <li
+            className={value === this.state.currentPage ? value + " activePage" : value}
+            key={value}
+          >
             
-            <Link to={value === "index" ? "/" : value}>
+            <Link to={value === "index" ? "/" : "/" + value}>
               {this.state.linksUpper[value]}
             </Link>
     

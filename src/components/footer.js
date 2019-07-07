@@ -4,24 +4,35 @@ import "../css/components/footer.scss"
 
 // import { Link } from 'gatsby'
 
-// import logo from '../img/logo.svg'
-// import facebook from '../img/social/facebook.svg'
-// import instagram from '../img/social/instagram.svg'
-// import twitter from '../img/social/twitter.svg'
-// import vimeo from '../img/social/vimeo.svg'
-
 const footer = class extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      display : ""  
+    }
+  }
+
+
+
+  switchDisplay(){
+    if(this.state.display === ""){
+      this.setState({display: "active"})
+    }else if(this.state.display === "active"){
+      this.setState({display: "notActive"})
+    }else if(this.state.display === "notActive"){
+      this.setState({display: "active"})
+    }
+  }
+
   render() {
     return (
-      <footer>
-        <div className="footerModal">
+      <footer className="footer">
+        <div className="button" onClick={() => this.switchDisplay()}>
+          = Menu =
+        </div>
+        <div className={"footerModal " + this.state.display}>
           <div className="nav">
             <Nav />
-          </div>
-          <div className="buttonWrap">
-            <div className="button">
-              =
-            </div>
           </div>
         </div>
       </footer>
