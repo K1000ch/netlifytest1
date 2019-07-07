@@ -38,6 +38,7 @@
     "react-native-text-gradient": "^0.1.6",
     "react-reveal-text": "^0.1.1",
     "react-transition-group": "^4.2.0",
+    "react-water-wave": "^1.0.4",
     "throttle-debounce": "^2.1.0",
     "uuid": "^3.2.1"
   },
