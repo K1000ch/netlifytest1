@@ -13,8 +13,9 @@ export default () => {
             node {
               html
               frontmatter {
-                date(formatString: "YYYY-MM-DD dddd")
+                date(formatString: "YYYY-MM-DD")
                 title
+                featuredimage
               }
             }
           }
@@ -23,16 +24,24 @@ export default () => {
     `
   )
   return (
-    <ul>
+    <ul className="newsList">
       {data.allMarkdownRemark.edges.map(
         ({ node }, index) => (
           <li key={index}>
-            <div>
+            <div className="date">
               <h3>
-                {node.frontmatter.date} {node.frontmatter.title}
+                {node.frontmatter.date} 
               </h3>
             </div>
-            <div dangerouslySetInnerHTML={{__html : node.html}} />
+            <div className="article">
+              <h3>{node.frontmatter.title}</h3>
+              {(() => {
+                if (node.frontmatter.featuredimage !== null) {
+                  return  <img src={node.frontmatter.featuredimage} alt="liveImage"/>;
+                }
+              })()}
+              <div className="text" dangerouslySetInnerHTML={{__html : node.html}} />
+            </div>
           </li>
       ))} 
     </ul>

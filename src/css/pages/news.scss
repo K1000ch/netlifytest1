@@ -1,11 +1,10 @@
 @import "../breakPoint";
-
 @media screen and (min-width:$breakPointMobile){
-  .live{
+  .news{
     h2{
       padding-left: 10px;
     }
-    .liveList{
+    .newsList{
       li{
         display: flex;
         justify-content: space-around;
@@ -56,8 +55,8 @@
 }
 
 @media screen and (max-width:$breakPointMobile){
-  .live{
-    .liveList{
+  .news{
+    .newsList{
       li{
         display: block;
         margin-bottom: 30px;
