@@ -10,24 +10,6 @@ import "../css/pages/about.css"
 export default ({data}) => (
   <Layout　currentPage="about" className={aboutStyle}>
     <div>
-      <h1>
-H1About
-      </h1>
-      <h2>
-H2About
-      </h2>
-      <h3>
-H3About
-      </h3>
-      <h4>
-H4About
-      </h4>
-      <h5>
-H5About
-      </h5>
-      <h6>
-H6About
-      </h6>
       <div dangerouslySetInnerHTML={{ __html: data.allMarkdownRemark.edges[0].node.html }} />
     </div>
   </Layout>
