@@ -34,6 +34,11 @@ export default () => {
             </div>
             <div className="article">
               <h3>{node.frontmatter.title}</h3>
+              {(() => {
+                if (node.frontmatter.featuredimage !== null) {
+                  return  <img src={node.frontmatter.featuredimage} alt="liveImage"/>;
+                }
+              })()}
               <div className="text" dangerouslySetInnerHTML={{__html : node.html}} />
             </div>
           </li>
