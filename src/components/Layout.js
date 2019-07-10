@@ -12,11 +12,14 @@ export default ({ children ,currentPage }) => (
   <div className="layoutWrapper">
       <Header currentPage={currentPage} className="layoutHeader"/>
         <div className="layoutPad"></div>
-
+        {currentPage}
         <div className="layoutMain">
           { children }
         </div>
 
+        <div className="copyRight">
+          ©︎2019 Chihiro All Rights Reserved.
+        </div>
       <Footer className="layoutFooter"/>
   </div>
 )

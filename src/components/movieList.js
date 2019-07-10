@@ -26,14 +26,14 @@ export default () => {
       {data.allMarkdownRemark.edges.map(
         ({ node }, index) => (
           <li key={index}>
-            <div>
+            <div className="date">
               <h3>
-                {node.frontmatter.title}
+                {node.frontmatter.title} 
               </h3>
             </div>
-            <div className="movieWraper">
-              <div className="iframeWrap">
-
+            <div className="article">
+              <div className="movieWraper">
+                <div className="iframeWrap">
                   <iframe
                     title={node.frontmatter.title}
                     src={node.frontmatter.link}
@@ -45,6 +45,7 @@ export default () => {
                   >
                   </iframe>
                 </div>
+              </div>
             </div>
           </li>
       ))} 
