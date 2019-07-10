@@ -19,7 +19,29 @@
   transition-duration: 0.1s;
   transition-timing-function: linear;
 }
-.globalHeader .headerNav{
+.globalHeader{
+  nav{
+    margin: 10px;
+    flex-basis: 35%;
+    margin-top: 5vh;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    ul{
+      color: white;
+      .activePage{
+        a{
+          text-decoration: underline;
+        }
+      }
+      li{
+        margin-left: 1vw;
+      }
+    }
+  }
+}
+
+/*
+.headerNav{
   margin: 10px;
   flex-basis: 35%;
   position: relative;
@@ -27,21 +49,20 @@
   transition-duration: 0.1s;
   transition-timing-function: linear;
 }
-
+*/
 .globalHeader .globalNavigation > ul{
   display: flex;
   justify-content: space-around;
 }
-
+.siteTitle{
+  font-size: 3rem;
+}
 
 .globalHeader #hide{
   h1{
-    position: relative;
-    top: -5vh;
   }
   nav{
-    position: relative;
-    top: -5vh;
+    margin-top: 1vh;
   }
 }
 

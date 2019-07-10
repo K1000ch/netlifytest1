@@ -2,7 +2,7 @@ import React from 'react'
 // import { Link } from 'gatsby'
 import GloalNav from "./globalNavigation"
 // import { throttle, debounce } from 'throttle-debounce';
-// import { throttle } from 'throttle-debounce';
+import { throttle } from 'throttle-debounce';
 import "../css/components/header.scss"
 // import "../css/animations/headerAnimations.css"
 
@@ -24,7 +24,7 @@ class Header extends React.Component{
     }
   }
 
-/*
+
   componentDidMount() {
     window.addEventListener('scroll', event => throttle(400,this.watchCurrentPosition()), true)
   }
@@ -49,7 +49,7 @@ class Header extends React.Component{
       document.body.scrollTop
     );
   }
-*/
+
   render(){
     return(
       <header

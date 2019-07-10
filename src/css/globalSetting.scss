@@ -7,12 +7,24 @@
   src: url("../fonts/GidoleFont/Gidole-Regular.ttf") format("truetype");
 }
 @font-face{
+  font-family: gidolinya-Regular;
+  src: url("../fonts/GidoleFont/Gidolinya-Regular.otf") format("opentype");
+}
+@font-face{
   font-family: morganiteMedium;
   src: url("../fonts/Morganite/Morganite-Medium.ttf") format("truetype");
 }
 @font-face{
   font-family: morganiteBlack;
   src: url("../fonts/Morganite/Morganite-Black.ttf") format("truetype");
+}
+@font-face{
+  font-family: leagueSpartanBold;
+  src: url("../fonts/league-spartan-master/_webfonts/leaguespartan-bold.ttf") format("truetype");
+}
+@font-face{
+  font-family: aleagueSpartanBold;
+  src: url("../fonts/MADE-Evolve-Sans-PERSONAL-USE/MADE\ Evolve\ Sans\ Light\ \(PERSONAL\ USE\).otf") format("opentype");
 }
 /*
 .youtube-wrap {
