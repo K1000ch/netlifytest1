@@ -6,9 +6,6 @@ import "../css/pages/movie.scss"
 export default () => (
   <Layout currentPage="movie">
     <div className="movie">
-      <h1>
-        movie
-      </h1>
       <MovieList />
     </div>
   </Layout>

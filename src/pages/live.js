@@ -7,9 +7,6 @@ import "../css/pages/live.scss"
 export default () => (
   <Layout currentPage="live">
       <div className="live">
-      <h2>
-        Lives
-      </h2>
         <LiveList />
       </div>
   </Layout>

@@ -6,9 +6,6 @@ import MusicList from "../components/musicList"
 
 export default () => (
   <Layout currentPage="music">
-    <h1>
-      Music
-    </h1>
     <MusicList />
   </Layout>
 )

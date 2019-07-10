@@ -30,7 +30,6 @@ class Index extends React.Component{
     return(
       <Layout currentPage="index">
       <div>
-        <h1>Index</h1>
         <p>
           What do I like to do? Lots of course but definitely enjoy building
           websites.

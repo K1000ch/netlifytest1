@@ -7,9 +7,6 @@ import "../css/pages/news.scss"
 export default () => (
   <Layout currentPage="news">
     <div className="news">
-      <h2>
-        News
-      </h2>
       <NewsList />
     </div>
   </Layout>
