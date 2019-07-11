@@ -9,7 +9,10 @@
 .globalHeader .wrapper{
   display: flex;
   justify-content: space-between;
-
+  align-items: flex-end;
+  margin-top: 1vh;
+  margin-left: 1vh;
+  margin-right: 1vh;
 }
 .globalHeader .title{
   flex-basis: 65%;
@@ -21,9 +24,7 @@
 }
 .globalHeader{
   nav{
-    margin: 10px;
     flex-basis: 35%;
-    margin-top: 5vh;
     transition-duration: 0.5s;
     transition-timing-function: linear;
     ul{
@@ -55,7 +56,9 @@
   justify-content: space-around;
 }
 .siteTitle{
+  display: block;
   font-size: 3rem;
+  line-height: 1;
 }
 
 .globalHeader #hide{
@@ -72,13 +75,21 @@
     nav{
       display: none;
     }
-    h1{
-      padding-top: 10px;
-      padding-bottom: 10px;
-      padding-left: 10px;
-      font-size: 3.5rem;
-      text-align: left;
-      width: 100vw;
+    .wrapper{
+      .siteTitle{
+        display: block;
+        font-size: 2rem;
+        line-height: 1;
+        text-align: left;
+        width: 90vw;
+        margin-left: -0.67em;
+        margin: 0 auto;
+        position: relative;
+        left: -0.5em;
+      }
+      .siteTitle.start{
+        margin: 0px;
+      }
     }
   }
 }

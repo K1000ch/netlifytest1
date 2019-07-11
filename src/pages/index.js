@@ -24,8 +24,7 @@ class Index extends React.Component{
       text : "Room Number 404"
     }
   }
-
-
+  
   render() {
     return(
       <Layout currentPage="index">

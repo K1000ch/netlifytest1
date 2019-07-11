@@ -12,7 +12,7 @@ export default ({ children ,currentPage }) => (
   <div className="layoutWrapper">
       <Header currentPage={currentPage} className="layoutHeader"/>
         <div className="layoutPad"></div>
-        {currentPage}
+          <h2 className="pageTitle">{currentPage}</h2>
         <div className="layoutMain">
           { children }
         </div>
