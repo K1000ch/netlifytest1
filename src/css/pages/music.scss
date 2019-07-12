@@ -19,11 +19,14 @@
           // align-self: flex-end;
           .text{
             li{
-              padding-bottom: 3vh;
-              padding-bottom: 3vh;
+              padding-bottom: 1.5vh;
+              padding-bottom: 1.5vh;
             }
-            *{
+            p,li{
               font-size: 2rem;
+              small{
+                font-size: 1rem;
+              }
             }
           }
         }
