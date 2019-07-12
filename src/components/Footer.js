@@ -16,11 +16,11 @@ const footer = class extends React.Component {
 
   switchDisplay(){
     if(this.state.display === ""){
-      this.setState({display: "active"})
-    }else if(this.state.display === "active"){
-      this.setState({display: "notActive"})
-    }else if(this.state.display === "notActive"){
-      this.setState({display: "active"})
+      this.setState({display: "footerActive"})
+    }else if(this.state.display === "footerActive"){
+      this.setState({display: "footerNotActive"})
+    }else if(this.state.display === "footerNotActive"){
+      this.setState({display: "footerActive"})
     }
   }
 

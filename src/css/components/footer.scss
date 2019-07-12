@@ -50,6 +50,7 @@
           a{
             width: 100%;
             text-align: center;
+            color: #ffffff!important;
           }
         }
         li:last-child{
@@ -70,14 +71,14 @@
     }
   }
   
-  .notActive{
+  .footerNotActive{
     animation-name: hide;
     animation-delay: 0s;
     animation-duration: 0.5s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
   }
-  .active{
+  .footerActive{
     animation-name: show;
     animation-delay: 0s;
     animation-duration: 0.5s;
