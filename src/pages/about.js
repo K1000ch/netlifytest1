@@ -3,13 +3,13 @@ import Layout from "../components/layout"
 // import { Link } from 'gatsby'
 import { graphql } from "gatsby"
 
-import aboutStyle from "../css/pages/about.css"
-import "../css/pages/about.css"
+import "../css/pages/about.scss"
 
 
 export default ({data}) => (
-  <Layout　currentPage="about" className={aboutStyle}>
-    <div>
+  <Layout　currentPage="about">
+    <div className="aboutPage">
+      <img src={data.allMarkdownRemark.edges[0].node.frontmatter.featuredimage} alt=""/>
       <div dangerouslySetInnerHTML={{ __html: data.allMarkdownRemark.edges[0].node.html }} />
     </div>
   </Layout>
@@ -33,6 +33,7 @@ export const query = graphql`
         frontmatter {
           title
           templateKey
+          featuredimage
         }
         excerpt(format: PLAIN)
       }
