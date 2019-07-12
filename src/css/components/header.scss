@@ -10,23 +10,23 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-top: 1vh;
-  margin-left: 1vh;
-  margin-right: 1vh;
+  width: 84vw;
+  margin: 0 auto;
+  // transition-duration: 0.2s;
+  // transition-timing-function: ease-out;
+  position: relative;
+  top: 2vh;
 }
 .globalHeader .title{
   flex-basis: 65%;
   margin: 10px;
+  margin-left: 0px; 
   position: relative;
   top: 20px;
-  transition-duration: 0.1s;
-  transition-timing-function: linear;
 }
 .globalHeader{
-  nav{
+  .globalNavigation{
     flex-basis: 35%;
-    transition-duration: 0.5s;
-    transition-timing-function: linear;
     ul{
       color: white;
       .activePage{
@@ -41,16 +41,6 @@
   }
 }
 
-/*
-.headerNav{
-  margin: 10px;
-  flex-basis: 35%;
-  position: relative;
-  top: 20px;
-  transition-duration: 0.1s;
-  transition-timing-function: linear;
-}
-*/
 .globalHeader .globalNavigation > ul{
   display: flex;
   justify-content: space-around;
@@ -61,14 +51,68 @@
   line-height: 1;
 }
 
-.globalHeader #hide{
-  h1{
-    
-  }
-  nav{
-    margin-top: 1vh;
+
+.display{
+  .wrapper{
+    // position: relative;
+    // top: 5vh;
+    // // width: 84vw;
+    animation-name: headerDisplay;
+    animation-delay: 0s;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
   }
 }
+.hide{
+  .wrapper{
+    // position: relative;
+    // top: 2vh;
+    // width: 90vw;
+    animation-name: headerHide;
+    animation-delay: 0s;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+  }
+}
+
+@keyframes headerHide{
+  0%{
+    top: 5vh;
+    width: 84vw;
+  }
+
+  50%{
+    top: 2vh;
+    width: 84vw;
+  }
+
+  100%{
+    top: 2vh;
+    width: 90vw;
+  }
+}
+
+@keyframes headerDisplay{
+  0%{
+    top: 2vh;
+    width: 90vw;
+  }
+
+  50%{
+    top: 2vh;
+    width: 84vw;
+  }
+
+  100%{
+    top: 5vh;
+    width: 84vw;
+  }
+}
+
+
+
 
 @media screen and (max-width:$breakPointMobile){
   .globalHeader{

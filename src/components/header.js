@@ -35,7 +35,7 @@ class Header extends React.Component{
 
   watchCurrentPosition() {
     this.setState({currentPosition:this.scrollTop()});
-    if(this.scrollTop() > 5){
+    if(this.scrollTop() > 15){
       this.setState({headerClass:"hide"})
     }else{
       this.setState({headerClass:"display"})
@@ -53,10 +53,10 @@ class Header extends React.Component{
   render(){
     return(
       <header
-        className="globalHeader"
+        className={"globalHeader " + this.state.headerClass}
         onScroll={this.handleScroll}
       >
-        <div className="wrapper" id={this.state.headerClass}>
+        <div className="wrapper">
           <h1 className="siteTitle">
             {this.state.title}
           </h1>
