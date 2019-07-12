@@ -1,10 +1,65 @@
 @import "../breakPoint";
+@import "./_layoutAnimation";
 
+
+
+html{
+  // animation-name: layoutGrad 10s ease 0 infinite alternate;
+  // layoutDeg 10s ease 0 infinite alternate;
+  // animation-name: layoutGrad;
+  // animation-direction: alternate;
+  // animation-duration: 15s;
+  // animation-iteration-count: infinite;
+  
+  background: linear-gradient(
+    282deg,
+    #085078,
+    #355C7D,
+    #6C5B7B,
+    #C06C84,
+    #FD746C,
+    #2C3E50,
+    #ffd452
+  );
+  background-size: 1400% 1400%;
+  animation: AnimationName 35s ease-in-out infinite;
+}
+
+
+.layoutWrapper{
+  animation: fadeIn 1s ease-in 0s 1 normal;
+}
+
+/*
 .layoutWrapper{
   min-height: 100vh;
   position: relative;
+  transition-property: all;
+  transition-duration: 2s;
+  transition-timing-function: ease;
+  background: 
+    linear-gradient(
+      25deg,
+      rgba(192, 108, 108, 1),
+      #6C5B7B,
+      #355C7D
+    )
+  ;
 }
 
+.layoutWrapperabout{
+  transition-property: all;
+  transition-duration: 2s;
+  transition-timing-function: ease;
+  background: 
+    linear-gradient(
+      25deg,
+      #f1f2b5,
+      #135058
+    )
+  ;
+}
+*/
 .layoutPad{
   height: 8vh;
 }
@@ -28,7 +83,7 @@
     width: 100vw;
     text-align: center;
     margin-top: 60px;
-    margin-bottom: 10px;
+    padding-bottom: 40px;
   }
   .pageTitle{
     text-align: center;
@@ -52,7 +107,7 @@
     width: 100vw;
     text-align: center;
     margin-top: 40px;
-    margin-bottom: 40px;
+    padding-bottom: 40px;
   }
   .pageTitle{
     text-align: center;

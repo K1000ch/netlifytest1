@@ -1,0 +1,97 @@
+
+@keyframes fadeIn {
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
+
+@keyframes AnimationName { 
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+
+
+@keyframes layoutDeg{
+  0%{
+    background: 
+      linear-gradient(
+        0deg
+      )
+    ;
+  }
+  20%{
+    background: 
+      linear-gradient(
+        72deg
+      )
+    ;
+  }
+  40%{
+    background: 
+      linear-gradient(
+        140deg
+      )
+    ;
+  }
+  60%{
+    background: 
+      linear-gradient(
+        210deg
+      )
+    ;
+  }
+  80%{
+    background: 
+      linear-gradient(
+        280deg
+      )
+    ;
+  }
+  100%{
+    background: 
+      linear-gradient(
+        350deg
+      )
+    ;
+  }
+}
+
+@keyframes layoutGrad{
+  0%{
+    background: 
+      linear-gradient(
+        25deg,
+        rgba(192, 108, 108, 1),
+        #6C5B7B
+      )
+    ;
+  }
+  25%{
+    background: 
+      linear-gradient(
+        25deg,
+        #f1f2b5,
+        #135058
+      )
+    ;
+  }
+  75%{
+    background: 
+      linear-gradient(
+        25deg,
+        #FFAFBD,
+        #C9FFBF
+      )
+    ;
+  }
+  100%{
+    background: 
+      linear-gradient(
+        25deg,
+        #1F1C2C,
+        #928DAB
+      )
+    ;
+  }
+}

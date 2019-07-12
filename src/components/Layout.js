@@ -2,14 +2,11 @@ import React from 'react'
 import Header from "./header"
 import Footer from "./footer"
 
-//import "../css/reset.css"
-//import "../css/globalSetting.css"
-//import "../css/globalStyle.css"
 import "../css/components/layout.scss"
 
 
 export default ({ children ,currentPage }) => (
-  <div className="layoutWrapper">
+  <div className={"layoutWrapper layoutWrapper" + currentPage}>
       <Header currentPage={currentPage} className="layoutHeader"/>
         <div className="layoutPad"></div>
           <h2 className="pageTitle">{currentPage}</h2>
