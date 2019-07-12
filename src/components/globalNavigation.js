@@ -36,7 +36,7 @@ class GlobalNavigation extends React.Component{
       <ul>
         {this.state.links.map((value) =>
           <li
-            className={value === this.state.currentPage ? value + " activePage" : value}
+            className={value === this.state.currentPage ? value + " activePage" : value + " notActive"}
             key={value}
           >
             

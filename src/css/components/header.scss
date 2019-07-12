@@ -10,12 +10,12 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  width: 84vw;
   margin: 0 auto;
   // transition-duration: 0.2s;
   // transition-timing-function: ease-out;
   position: relative;
-  top: 2vh;
+  top: 5vh;
+  width: 84vw;
 }
 .globalHeader .title{
   flex-basis: 65%;
@@ -29,13 +29,61 @@
     flex-basis: 35%;
     ul{
       color: white;
-      .activePage{
+      li{
         a{
-          text-decoration: underline;
+          padding-right: 1vw;
+          padding-left: 1vw; 
+          margin-left: 1vw;
+        }
+      }      
+      .activePage{
+        a {
+          width: 100%;
+          text-align: center;
+          padding: 0.4em 0;
+          position: relative;
+          display: inline-block;
+        }
+        a:before {
+          position: absolute;
+          content: '';
+          transition: all 0.35s ease;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          border-top: 1px solid #ffffff;
+          border-bottom: 1px solid #ffffff;
         }
       }
-      li{
-        margin-left: 1vw;
+      .notActive{
+        a {
+          width: 100%;
+          text-align: center;
+          padding: 0.4em 0;
+          position: relative;
+          display: inline-block;
+        }
+        a:before {
+          position: absolute;
+          content: '';
+          transition: all 0.35s ease;
+          opacity: 0;
+          top: 25%;
+          bottom: 25%;
+          left: 0;
+          right: 0;
+          border-top: 1px solid #ffffff;
+          border-bottom: 1px solid #ffffff;
+        }
+        a:hover{
+          opacity: 0.9;
+        }
+        a:hover:before{
+          opacity: 0.9;
+          top: 0;
+          bottom: 0;
+        }
       }
     }
   }
@@ -52,31 +100,24 @@
 }
 
 
-.display{
-  .wrapper{
-    // position: relative;
-    // top: 5vh;
-    // // width: 84vw;
-    animation-name: headerDisplay;
-    animation-delay: 0s;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-out;
+@media screen and (min-width:$breakPointMobile){
+  .display{
+    .wrapper{
+      animation-name: headerDisplay;
+      animation-duration: 0.5s;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-out;
+    }
+  }
+  .hide{
+    .wrapper{
+      animation-name: headerHide;
+      animation-duration: 0.5s;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-out;
+    }
   }
 }
-.hide{
-  .wrapper{
-    // position: relative;
-    // top: 2vh;
-    // width: 90vw;
-    animation-name: headerHide;
-    animation-delay: 0s;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-out;
-  }
-}
-
 @keyframes headerHide{
   0%{
     top: 5vh;

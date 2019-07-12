@@ -20,7 +20,7 @@ class Header extends React.Component{
       title: "Room Number 404",
       currentPage: props.currentPage,
       currentPosition: 0,
-      headerClass: "display"
+      headerClass: "none"
     }
   }
 
@@ -37,7 +37,7 @@ class Header extends React.Component{
     this.setState({currentPosition:this.scrollTop()});
     if(this.scrollTop() > 15){
       this.setState({headerClass:"hide"})
-    }else{
+    }else if(this.state.headerClass !== "none"){
       this.setState({headerClass:"display"})
     }
   }
