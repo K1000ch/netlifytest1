@@ -3,6 +3,7 @@ templateKey: page
 title: about
 featuredimage: /img/jumbotron.jpg
 ---
+**このサイトについて**
 こんにちは。\
 これは技術デモとして作られたサンプルサイトです。
 
@@ -35,4 +36,3 @@ featuredimage: /img/jumbotron.jpg
 * SASS
 * その他、各種JavaScriptライブラリ
 
-****
