@@ -4,6 +4,7 @@ title: about
 featuredimage: /img/jumbotron.jpg
 ---
 **このサイトについて**
+
 こんにちは。\
 これは技術デモとして作られたサンプルサイトです。
 

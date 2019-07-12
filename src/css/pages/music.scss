@@ -1,0 +1,47 @@
+@import "../breakPoint";
+
+
+@media screen and (min-width:$breakPointMobile){  
+  .musicPage{
+    .musicList{
+      >li{
+        display: flex;
+        justify-content: space-between;
+        border-top: solid 1px #ffffff;
+        padding-top: 4vh;
+        padding-bottom: 4vh;
+        .left{
+          flex-basis: 40%;
+          // align-self: flex-end;
+        }
+        .article{
+          flex-basis: 56%;
+          // align-self: flex-end;
+          .text{
+            li{
+              padding-bottom: 3vh;
+              padding-bottom: 3vh;
+            }
+            *{
+              font-size: 2rem;
+            }
+          }
+        }
+      }
+
+      .article{
+        .text{
+        }
+      }
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+@media screen and (max-width:$breakPointMobile){  
+  .musicPage{
+
+  }
+}
