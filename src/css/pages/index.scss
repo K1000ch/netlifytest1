@@ -1,0 +1,73 @@
+@import "../breakPoint";
+
+@media screen and (min-width:$breakPointMobile){
+  .layoutWrapperindex{
+    max-height: 100vh;
+    .layoutPad{
+      display: none;
+    }
+    .layoutMain{
+      background-color: rgba(1,1,1,0);
+      padding: 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      max-height: 90vh;
+      .overlay{
+        width: 60vw;
+        min-height: 60vh;
+        text-align: center;
+        p{
+          margin-top: 3vh;
+          margin-bottom: 3vh;
+          line-height: 1.3;
+        }
+      }
+    }
+    .copyRight{
+      height: 5vh;
+      margin-top: 0px;
+      padding-bottom: 0px;
+      position: relative;
+      bottom: 5vh;
+    }
+  }
+}
+@media screen and (max-width:$breakPointMobile){
+  .layoutWrapperindex{
+    .layoutPad{
+      display: none;
+    }
+    .layoutMain{
+      background-color: rgba(1,1,1,0);
+      padding: 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: space-between;
+      .overlay{
+        width: 80vw;
+        min-height: 60vh;
+        text-align: center;
+        p{
+          margin-top: 3vh;
+          margin-bottom: 3vh;
+          line-height: 1.3;
+        }
+      }
+    }
+    .copyRight{
+      display: none;
+    }
+  }
+}
+
+
+
+@keyframes AnimationName { 
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}

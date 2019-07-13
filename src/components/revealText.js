@@ -15,7 +15,7 @@ class Rev extends React.Component {
   componentDidMount() {
     setTimeout(() => {
       this.setState({ show: true });
-    }, 2000);
+    }, 500);
   }
 
   render() {
