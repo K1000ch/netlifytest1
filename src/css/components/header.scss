@@ -163,18 +163,65 @@
     .wrapper{
       .siteTitle{
         display: block;
-        font-size: 2rem;
+        font-size: 3rem;
+        white-space: nowrap;
         line-height: 1;
-        text-align: left;
+        text-align: center;
         width: 90vw;
-        margin-left: -0.67em;
+        // margin-left: -0.67em;
         margin: 0 auto;
         position: relative;
-        left: -0.5em;
+        // left: -1.1em;
+        top: 0vh;
       }
       .siteTitle.start{
         margin: 0px;
       }
     }
   }
+  .display{
+    .wrapper{
+      .siteTitle{
+        animation-name: headerDisplayMobile;
+        animation-duration: 0.2s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-out;
+      }
+    }
+  }
+  .hide{
+    .wrapper{
+      .siteTitle{
+        animation-name: headerHideMobile;
+        animation-duration: 0.2s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-out;
+      }
+    }
+  }
 }
+
+
+@keyframes headerHideMobile{
+  0%{
+    font-size: 3rem;
+    top: 0vh;
+  }
+  100%{
+    font-size: 3rem;
+    top: -4vh;
+  }
+}
+
+@keyframes headerDisplayMobile{
+  0%{
+    font-size: 3rem;
+    top: -4vh;
+  }
+  100%{
+    font-size: 3rem;
+    top: 0vh;
+  }
+}
+
+
