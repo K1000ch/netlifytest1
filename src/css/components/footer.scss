@@ -14,7 +14,7 @@
     .button{
       position: fixed;
       bottom: 0;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
       font-size: 2.5rem;
       z-index: 9999;
     }
@@ -40,12 +40,12 @@
         align-items: center;
         align-content: space-between;
         height: 80%;
-        margin-top: 10%;
+        padding-top: 20%;
         margin-bottom: 10%;
         li{
-          margin-top: 2vh;
-          padding-bottom: 2vh;
-          border-bottom: 2px solid white;
+          margin-top: 2.5vh;
+          padding-bottom: 2.5vh;
+          border-bottom: 1px solid white;
           width: 30vw;
           a{
             width: 100%;
@@ -62,7 +62,7 @@
     a{
       color: white!important;
       z-index: 9998;
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
 
     li{

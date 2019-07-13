@@ -30,7 +30,7 @@ const footer = class extends React.Component {
         <div className="button" onClick={() => this.switchDisplay()}>
           = Menu =
         </div>
-        <div className={"footerModal " + this.state.display}>
+        <div className={"footerModal " + this.state.display}  onClick={() => this.switchDisplay()}>
           <div className="nav">
             <Nav />
           </div>
