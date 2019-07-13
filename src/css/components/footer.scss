@@ -74,14 +74,14 @@
   .footerNotActive{
     animation-name: hide;
     animation-delay: 0s;
-    animation-duration: 0.5s;
+    animation-duration: 0.3s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
   }
   .footerActive{
     animation-name: show;
     animation-delay: 0s;
-    animation-duration: 0.5s;
+    animation-duration: 0.3s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
   }
