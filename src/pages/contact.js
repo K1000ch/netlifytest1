@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 
 export default () => (
   <Layout currentPage="contact">
-    <div>
+    <div className="contactPage">
       <p>
         お問い合わせはGoogleフォームから受け付けています。
         <br/>
