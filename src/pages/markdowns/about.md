@@ -1,7 +1,7 @@
 ---
 templateKey: page
 title: about
-featuredimage: /img/jumbotron.jpg
+featuredimage: /img/5e0156ec-d01c-44e3-bc26-1f503eea135a.jpeg
 ---
 **このサイトについて**
 
