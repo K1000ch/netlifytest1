@@ -27,6 +27,9 @@ featuredimage: /img/jumbotron.jpg
 * 効果的なアニメーション
 * CMS導入
 * 基本的なSEO対策
+* SPA化による閲覧性の高さ
+* 優れた表示速度
+* メンテナンスコストとセキュリティリスクの低さ
 
 **主な使用技術**
 
@@ -36,8 +39,8 @@ featuredimage: /img/jumbotron.jpg
 * HTML5
 * CSS3
 * SASS
-* その他、各種JavaScriptライブラリ
 * Netlify
 * NetlifyCMS
 * Git
 * Node.js
+* その他、各種JavaScirptライブラリ
