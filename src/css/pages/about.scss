@@ -33,6 +33,9 @@
 
 @media screen and (max-width:$breakPointMobile){
   .aboutPage{
+    >div{
+      margin-top: 2vh;
+    }
     img{
       display: block;
       width: 100%;
