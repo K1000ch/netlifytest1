@@ -8,8 +8,7 @@
         display: flex;
         justify-content: space-between;
         border-top: solid 1px #ffffff;
-        padding-top: 4vh;
-        padding-bottom: 4vh;
+        padding: 4vh;
         .left{
           flex-basis: 40%;
           // align-self: flex-end;
@@ -53,6 +52,7 @@
         padding-bottom: 4vh;
         &:first-child{
           border-top: 0px;
+          padding-top: 0px;
         }
         .left{
           // align-self: flex-end;
